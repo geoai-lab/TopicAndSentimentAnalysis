@@ -13,7 +13,7 @@ Please feel free to re-use the code here for your own projects. Niche does not a
 
 A figure with a screenshot of the neighborhood reviews on Niche and the average review ratings of NYC neighborhoods is shown as below:
 <p align="center">
-<img align="center" src="https://github.com/YingjieHu/NeighborhoodReview/blob/master/fig/NeighborhoodReview.png" width="600" />
+<img align="center" src="https://github.com/geoai-lab/TopicAndSentimentAnalysis/blob/master/fig/NeighborhoodReview.png" width="600" />
 </p>
 
 
