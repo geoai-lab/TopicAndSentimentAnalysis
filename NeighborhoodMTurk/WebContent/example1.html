@@ -1,0 +1,951 @@
+
+<html><head><title>HIT</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script></head><body><form name="mturk_form" method="post" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit"><input type="hidden" value="" name="assignmentId" id="assignmentId" /><!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:1.2 em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p>In this task, you will read a review written by a person about a neighborhood and an overall rating (from 1 star to 5 star) given by the same person when writing this review. You need to complete two things:&nbsp;</p>
+
+<ol>
+	<li>Identify the aspects of the neighborhood talked about in the review. You will choose the aspects from multiple options from Question 1, and rate each aspect based on the review content and the overall rating.</li>
+	<li>If you see an aspect that is talked about in the review but is not provided in the options in Question 1, please describe this aspect in Question 2 and rate this aspect based on the review content and the overall rating.</li>
+</ol>
+
+<p>For the ratings, 1 star is the worst and 5 star is the best.</p>
+&nbsp;
+
+<div style="border-style: dotted;padding:10 10 10 10;"><strong>Example Task:</strong><br />
+<strong>Review:</strong><br />
+<i>"This neighborhood is pretty safe. It is very clean, quiet, and a perfect place for raising a family. However, it does not have many restaurants."</i>
+
+<div style="margin: 5px 0 10px 0">
+<div style="float:left; font-size: 14px;  "><strong>Overall rating:</strong> &nbsp; &nbsp;</div>
+
+<div style="float:left;color:red; font-size: 14px;"><strong class="review-rating">4</strong></div>
+&nbsp; &nbsp; <strong style="font-size: 14px;">star</strong></div>
+
+<p><strong>Answer:</strong><br />
+It can be seen that this review talks about 3 aspects about the neighborhood: safety, community friendliness, and access to restaurants (life convenience). Based on these aspects and the descriptive words used by the author, we can answer Question 1 as below: <!-- start of example question 1  --></p>
+
+<fieldset><label>1. Which of the following aspects are talked about in this neighborhood review? If a review does not talk about any aspect, please check "None".</label>
+
+<div class="checkbox"><label><input checked="checked" onclick="return false;" type="checkbox" value="CrimeSafetyExample" /><strong>Crime and Safety</strong> (e.g., crimes in the neighborhood, or if one feels safe or not)</label>
+
+<div class="row" id="CrimeSafetyExample_sentiment_scale" style="display:block;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">4</span> star, what do you think is the author's rating on <span style="color:red">Crime and Safety</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input onclick="return false;" type="radio" value="1" /></td>
+			<td><input onclick="return false;" type="radio" value="1.5" /></td>
+			<td><input onclick="return false;" type="radio" value="2" /></td>
+			<td><input onclick="return false;" type="radio" value="2.5" /></td>
+			<td><input onclick="return false;" type="radio" value="3" /></td>
+			<td><input onclick="return false;" type="radio" value="3.5" /></td>
+			<td><input checked="checked" onclick="return false;" type="radio" value="4" /></td>
+			<td><input onclick="return false;" type="radio" value="4.5" /></td>
+			<td><input onclick="return false;" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input checked="checked" onclick="return false;" type="checkbox" value="CommunityFriendlinessExample" /><strong>Community Friendliness</strong> (e.g., the neighborhood provides a friendly community for families living there)</label>
+
+<div class="row" id="CommunityFriendlinessExample_sentiment_scale" style="display:block;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">4</span> star, what do you think is the author's rating on <span style="color:red">Community Friendliness</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input onclick="return false;" type="radio" value="1" /></td>
+			<td><input onclick="return false;" type="radio" value="1.5" /></td>
+			<td><input onclick="return false;" type="radio" value="2" /></td>
+			<td><input onclick="return false;" type="radio" value="2.5" /></td>
+			<td><input onclick="return false;" type="radio" value="3" /></td>
+			<td><input onclick="return false;" type="radio" value="3.5" /></td>
+			<td><input onclick="return false;" type="radio" value="4" /></td>
+			<td><input onclick="return false;" type="radio" value="4.5" /></td>
+			<td><input checked="checked" onclick="return false;" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="CulturalDiversity" /><strong>Cultural Diversity</strong> (e.g., the neighborhood has a diverse population coming from different cultures)</label>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="LocalWeather" /><strong>Local Weather</strong> (e.g., the weather conditions of the neighborhood in different months or seasons)</label>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input checked="checked" onclick="return false;" type="checkbox" value="LifeConvenienceExample" /><strong>Life Convenience</strong> (e.g., does the neighborhood have restaurants, bars, stores, nightlife, and coffee shops)</label>
+
+<div class="row" id="LifeConvenienceExample_sentiment_scale" style="display:block;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">4</span> star, what do you think is the author's rating on <span style="color:red">Life Convenience</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input onclick="return false;" type="radio" value="1" /></td>
+			<td><input onclick="return false;" type="radio" value="1.5" /></td>
+			<td><input onclick="return false;" type="radio" value="2" /></td>
+			<td><input onclick="return false;" type="radio" value="2.5" /></td>
+			<td><input checked="checked" onclick="return false;" type="radio" value="3" /></td>
+			<td><input onclick="return false;" type="radio" value="3.5" /></td>
+			<td><input onclick="return false;" type="radio" value="4" /></td>
+			<td><input onclick="return false;" type="radio" value="4.5" /></td>
+			<td><input onclick="return false;" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="EmploymentOpportunity" /><strong>Employment Opportunity</strong> (e.g., does the neighborhood provide job opportunities)</label>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="TransportationConvenience" /><strong>Transportation Convenience</strong> (e.g., the accessibility of the neighborhood to transportation facilities)</label>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="HousingConditions" /><strong>Housing Conditions</strong> (e.g., the housing conditions and rent price of a neighborhood)</label>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input onclick="return false;" type="checkbox" value="None" /><strong>None</strong> </label></div>
+</fieldset>
+<!-- end of example question 1  --> <!--  and the overall rating of 4 star, use your best judgment to estimate the author's rating on each aspect. Thus, you may answer the following aspects with estimated ratings for Question 1:<br />
+<strong>- Crime and Safety: 4.5 star </strong><br />
+<strong>- Community Friendliness: 5 star </strong><br />
+<strong>- Life Convenience: 3 star </strong><br /> --> For Question 2, since this example review does not talk about any additional aspect not covered in Question 1, we can choose "None".
+
+<fieldset>
+<div class="input-group"><label>2. Do you see any aspect discussed in this neighborhood review but not listed in Question 1? If so, use <u>no more than 3 words</u> to describe this aspect. Please write down <u>only one additional aspect</u>. If you do not see any new aspect, please choose "None".</label>
+
+<div class="row">
+<div class="col-md-1" style="padding: 0 0 0 50px; text-align: center; vertical-align:middle;"><input checked="checked" onclick="return false;" type="radio" value="None" />
+<div style="font-size: 14px; ">None</div>
+</div>
+
+<div class="col-md-11"><input class="form-control" disabled="disabled" onkeydown="return false;" size="80" type="text" /></div>
+</div>
+</div>
+</fieldset>
+
+<div style="height:0px;">&nbsp;</div>
+It is possible that a review does not talk about any aspect. For example, a reviewer may simply say <i>"I love my neighborhood!"</i>. In such a case, choose "None" for Question 1 and "None" for Question 2.</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Content Body -->
+
+<div id="review_id">&nbsp;</div>
+
+<section><label style="font-size: 14px;">Review:</label>
+
+<div class="review-content" style="font-size: 14px; "><i>"Forest Hills is a wonderful neighborhood for all types of people. It is a short subway ride from all that Manhattan has to offer, and provides residents with lovely nightlife, parks, recreation centers, restaurants, and living areas. There is a lot of diversity in this neighborhood as well."</i></div>
+&nbsp;
+
+<div style="height:5px;">&nbsp;</div>
+
+<div style="float:left; font-size: 14px;  "><strong>Overall rating:</strong> &nbsp; &nbsp;</div>
+
+<div style="float:left;color:red; font-size: 14px;"><strong class="review-rating">5</strong></div>
+&nbsp; &nbsp; <strong style="font-size: 14px;">star</strong>
+
+<div style="height:20px;">&nbsp;</div>
+
+<fieldset><label>1. Which of the following aspects are talked about in this neighborhood review? If a review does not talk about any aspect, please check "None".</label>
+
+<div class="checkbox"><label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="CrimeSafety" /><strong>Crime and Safety</strong> (e.g., crimes in the neighborhood, or if one feels safe or not)</label>
+
+<div class="row" id="CrimeSafety_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Crime and Safety</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="CrimeSafety" type="radio" value="1" /></td>
+			<td><input name="CrimeSafety" type="radio" value="1.5" /></td>
+			<td><input name="CrimeSafety" type="radio" value="2" /></td>
+			<td><input name="CrimeSafety" type="radio" value="2.5" /></td>
+			<td><input name="CrimeSafety" type="radio" value="3" /></td>
+			<td><input name="CrimeSafety" type="radio" value="3.5" /></td>
+			<td><input name="CrimeSafety" type="radio" value="4" /></td>
+			<td><input name="CrimeSafety" type="radio" value="4.5" /></td>
+			<td><input name="CrimeSafety" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="TestAnswerCheck" onclick="checkedTest(this)" type="checkbox" value="TestAnswer" /><strong>Please Check</strong> (This is a test option. Please ALWAYS check this option (even when you check "None" for this question) and select 3.5 star to make your answer valid)</label>
+
+<div class="row" id="TestAnswer_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">This Test Aspect</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="TestAnswer" type="radio" value="1" /></td>
+			<td><input name="TestAnswer" type="radio" value="1.5" /></td>
+			<td><input name="TestAnswer" type="radio" value="2" /></td>
+			<td><input name="TestAnswer" type="radio" value="2.5" /></td>
+			<td><input name="TestAnswer" type="radio" value="3" /></td>
+			<td><input name="TestAnswer" type="radio" value="3.5" /></td>
+			<td><input name="TestAnswer" type="radio" value="4" /></td>
+			<td><input name="TestAnswer" type="radio" value="4.5" /></td>
+			<td><input name="TestAnswer" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="CommunityFriendliness" /><strong>Community Friendliness</strong> (e.g., the neighborhood provides a friendly community for families living there)</label>
+
+<div class="row" id="CommunityFriendliness_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Community Friendliness</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="CommunityFriendliness" type="radio" value="1" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="1.5" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="2" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="2.5" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="3" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="3.5" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="4" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="4.5" /></td>
+			<td><input name="CommunityFriendliness" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="CulturalDiversity" /><strong>Cultural Diversity</strong> (e.g., the neighborhood has a diverse population coming from different cultures)</label>
+
+<div class="row" id="CulturalDiversity_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Cultural Diversity</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="CulturalDiversity" type="radio" value="1" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="1.5" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="2" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="2.5" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="3" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="3.5" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="4" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="4.5" /></td>
+			<td><input name="CulturalDiversity" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="LocalWeather" /><strong>Local Weather</strong> (e.g., the weather conditions of the neighborhood in different months or seasons)</label>
+
+<div class="row" id="LocalWeather_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Local Weather</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="LocalWeather" type="radio" value="1" /></td>
+			<td><input name="LocalWeather" type="radio" value="1.5" /></td>
+			<td><input name="LocalWeather" type="radio" value="2" /></td>
+			<td><input name="LocalWeather" type="radio" value="2.5" /></td>
+			<td><input name="LocalWeather" type="radio" value="3" /></td>
+			<td><input name="LocalWeather" type="radio" value="3.5" /></td>
+			<td><input name="LocalWeather" type="radio" value="4" /></td>
+			<td><input name="LocalWeather" type="radio" value="4.5" /></td>
+			<td><input name="LocalWeather" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="LifeConvenience" /><strong>Life Convenience</strong> (e.g., does the neighborhood have restaurants, bars, stores, nightlife, and coffee shops)</label>
+
+<div class="row" id="LifeConvenience_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Life Convenience</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="LifeConvenience" type="radio" value="1" /></td>
+			<td><input name="LifeConvenience" type="radio" value="1.5" /></td>
+			<td><input name="LifeConvenience" type="radio" value="2" /></td>
+			<td><input name="LifeConvenience" type="radio" value="2.5" /></td>
+			<td><input name="LifeConvenience" type="radio" value="3" /></td>
+			<td><input name="LifeConvenience" type="radio" value="3.5" /></td>
+			<td><input name="LifeConvenience" type="radio" value="4" /></td>
+			<td><input name="LifeConvenience" type="radio" value="4.5" /></td>
+			<td><input name="LifeConvenience" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="EmploymentOpportunity" /><strong>Employment Opportunity</strong> (e.g., does the neighborhood provide job opportunities)</label>
+
+<div class="row" id="EmploymentOpportunity_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Employment Opportunity</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="EmploymentOpportunity" type="radio" value="1" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="1.5" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="2" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="2.5" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="3" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="3.5" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="4" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="4.5" /></td>
+			<td><input name="EmploymentOpportunity" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="TransportationConvenience" /><strong>Transportation Convenience</strong> (e.g., the accessibility of the neighborhood to transportation facilities)</label>
+
+<div class="row" id="TransportationConvenience_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Transportation Convenience</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="TransportationConvenience" type="radio" value="1" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="1.5" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="2" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="2.5" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="3" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="3.5" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="4" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="4.5" /></td>
+			<td><input name="TransportationConvenience" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="HousingConditions" /><strong>Housing Conditions</strong> (e.g., the housing conditions and rent price of a neighborhood)</label>
+
+<div class="row" id="HousingConditions_sentiment_scale" style="display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">Housing Conditions</span></strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="HousingConditions" type="radio" value="1" /></td>
+			<td><input name="HousingConditions" type="radio" value="1.5" /></td>
+			<td><input name="HousingConditions" type="radio" value="2" /></td>
+			<td><input name="HousingConditions" type="radio" value="2.5" /></td>
+			<td><input name="HousingConditions" type="radio" value="3" /></td>
+			<td><input name="HousingConditions" type="radio" value="3.5" /></td>
+			<td><input name="HousingConditions" type="radio" value="4" /></td>
+			<td><input name="HousingConditions" type="radio" value="4.5" /></td>
+			<td><input name="HousingConditions" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div style="height:0px;">&nbsp;</div>
+<label><input name="Q1Answer" onclick="checkedNone(this)" type="checkbox" value="None" /><strong>None</strong> </label></div>
+</fieldset>
+
+<fieldset>
+<div class="input-group"><label>2. Do you see any aspect discussed in this neighborhood review but not listed in Question 1? If so, use <u>no more than 3 words</u> to describe this aspect. Please write down <u>only one additional aspect</u>. If you do not see any new aspect, please choose "None".</label>
+
+<div class="row">
+<div class="col-md-1" style="padding: 0 0 0 50px; text-align: center; vertical-align:middle;"><input id="input_aspect_radio" name="Q2Answer" onclick="input_aspect_radio_click(this);" type="radio" value="None" />
+<div style="font-size: 14px; ">None</div>
+</div>
+
+<div class="col-md-11"><input class="form-control" id="input_aspect_text" name="Q2Answer" onkeyup="key_up_limit(this)" size="80" type="text" />
+<div class="row" id="NewAspect_sentiment_scale" style="margin-top:5px;display:none;"><strong style="margin-left:15px;margin-top:4px;">Given the overall rating is <span style="color:red">5</span> star, what do you think is the author's rating on <span style="color:red">this new aspect</span>?</strong>
+
+<div class="col-md-8" style="padding:0;margin-left:-10px;">
+<div class="outer_div">
+<div class="canvas_div"><canvas class="line_canvas"></canvas></div>
+
+<div class="radio_div">
+<table>
+	<tbody>
+		<tr>
+			<td><input name="NewAspect" type="radio" value="1" /></td>
+			<td><input name="NewAspect" type="radio" value="1.5" /></td>
+			<td><input name="NewAspect" type="radio" value="2" /></td>
+			<td><input name="NewAspect" type="radio" value="2.5" /></td>
+			<td><input name="NewAspect" type="radio" value="3" /></td>
+			<td><input name="NewAspect" type="radio" value="3.5" /></td>
+			<td><input name="NewAspect" type="radio" value="4" /></td>
+			<td><input name="NewAspect" type="radio" value="4.5" /></td>
+			<td><input name="NewAspect" type="radio" value="5" /></td>
+		</tr>
+		<tr>
+			<td>1 star<br />
+			(worst)</td>
+			<td>1.5 star</td>
+			<td>2 star</td>
+			<td>2.5 star</td>
+			<td>3 star</td>
+			<td>3.5 star</td>
+			<td>4 star</td>
+			<td>4.5 star</td>
+			<td>5 star<br />
+			(best)</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+
+<fieldset><input id="reviewID" type="hidden" value="Forest_Hills|52a5bbb4-d779-4a33-b5c1-79e1b56e3751" /> <input id="neighborhood" type="hidden" value="Forest Hills" /> <input id="authorID" type="hidden" value="52a5bbb4-d779-4a33-b5c1-79e1b56e3751" /></fieldset>
+<!--
+<fieldset><label>1. This is an example of a multiple choice question. Select only ONE of the following:</label>
+
+<div class="radio"><label><input name="Q1Answer" type="radio" value="Apple" />Apple</label></div>
+
+<div class="radio"><label><input name="Q1Answer" type="radio" value="Orange" />Orange</label></div>
+</fieldset>
+
+<fieldset><label>2. This is another example of a multiple choice question. Select only ONE of the following. A drop down list saves more screen real estate than radio buttons but may require more keystrokes for the Worker to select the answer.</label> <select class="form-control" name="Q2Answer"><option selected="selected" value="select one">- select one -</option> <optgroup label="Fruit"><option value="Apple">Apple</option><option value="Banana">Banana</option><option value="Cherry">Cherry</option> </optgroup> <optgroup label="Vegetable"><option value="Broccoli">Broccoli</option><option value="Cabbage">Cabbage</option><option value="Daikon Radish">Daikon Radish</option> </optgroup> </select></fieldset>
+
+<fieldset><label>4. This is another example of a question that can have multiple answers.</label> <select class="form-control" multiple="MULTIPLE" name="Q4Answer" size="5"><option>Apple</option><option>Banana</option><option>Cherry</option><option>Durian</option><option>Elderberry</option><option>Fig</option><option>Grape</option> </select></fieldset>
+
+<fieldset><label>6. This is another example of an open-ended question. Use this when you need Workers to enter multi-line texts.</label><textarea class="form-control" cols="120" name="Q6MultiLineTextInput" rows="5"></textarea></fieldset>
+--!>
+
+</section>
+<!-- End Content Body --></section>
+</div>
+</section>
+<!-- close container -->
+<style type="text/css">fieldset {
+    padding: 10px;
+    background:#fbfbfb;
+    border-radius:5px;
+    margin-bottom:5px;
+}
+</style>
+<style type="text/css">.outer_div {
+  position: relative;
+}
+.canvas_div {
+  width: 720px;
+  height: 75px;
+}
+.canvas_div canvas {
+  width: 720px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radio_div {
+  width: 720px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radio_div table {
+  width: 720px;
+  border: none;
+  border-collapse: collapse;
+}
+.radio_div table tr td {
+  font-size: 14px;
+  background-color: transparent;
+  vertical-align: top;
+  text-align: center;
+  border: none;
+  padding: 0px;
+}
+.radio_div table tr:nth-child(1) td {
+  width: 10%;
+  height: 25px;
+  vertical-align: middle;
+}
+</style>
+<script type="text/javascript">
+  var ctx_arrary = document.getElementsByClassName("line_canvas")
+  for(var i=0; i<ctx_arrary.length; i++)
+  {
+      ctx = ctx_arrary[i].getContext("2d");
+	  ctx.lineWidth = 1;
+	  ctx.fillStyle="#000000";
+	  ctx.beginPath();
+	  ctx.strokeStyle = "#888888";
+	  ctx.lineWidth = 5;
+	  ctx.moveTo(18, 25);
+	  ctx.lineTo(285, 25);
+	  ctx.stroke();
+  }
+
+  
+	function checkedNone(obj) {
+		var cbs = document.getElementsByName("Q1Answer");
+		if (obj.value == 'None') 
+		{
+			for (var i = 0; i < cbs.length; i++) 
+			{
+				if (cbs[i].value != 'None')
+				{
+					cbs[i].checked = false;
+					var senti_scale_id = cbs[i].value + "_sentiment_scale"
+					var senti_scale_element = document.getElementById(senti_scale_id)
+					senti_scale_element.style.display = "none";
+				}
+			}
+			//obj.checked = true;
+		} 
+		else 
+		{
+			for (var i = 0; i < cbs.length; i++) {
+				if (cbs[i].value == 'None')
+					cbs[i].checked = false;
+				else
+				{
+					var senti_scale_id = cbs[i].value + "_sentiment_scale"
+					var senti_scale_element = document.getElementById(senti_scale_id)
+					if(cbs[i].checked == true)
+					{
+						senti_scale_element.style.display = "block";
+					}
+					else
+						senti_scale_element.style.display = "none";
+				}
+			}
+		}
+	}
+	
+	
+	
+	function checkedTest(obj) {
+		var cbs = document.getElementsByName("TestAnswerCheck");
+		var senti_scale_id = "TestAnswer_sentiment_scale"
+		var senti_scale_element = document.getElementById(senti_scale_id)
+		
+		if(cbs[0].checked)
+		{
+			senti_scale_element.style.display = "block";
+		}
+		else
+			senti_scale_element.style.display = "none";
+		
+	}
+
+	/*function radioClicked(radio) {
+	  var dontSubmit = !window.turkGetParam || ("ASSIGNMENT_ID_NOT_AVAILABLE" == turkGetParam('assignmentId', ""));
+
+	      radio.checked = false;
+	}
+
+	function setup() {
+	  disableSubmit();
+	}
+
+	function enableSubmit() {
+	  if (document.getElementById("submitButton")) {
+	    document.getElementById("submitButton").disabled = false;
+	  }
+	}
+	function disableSubmit(){
+	  if (document.getElementById("submitButton")) {
+	    document.getElementById("submitButton").disabled = true;
+	  }
+	}
+	//disable button on page load
+	if(window.attachEvent) {
+	  window.attachEvent('onload', setup);
+	} else {
+	  if(window.onload) {
+	    var curronload = window.onload;
+	    var newonload = function() {
+	      curronload();
+	      setup();
+	    };
+	    window.onload = newonload;
+	  } else {
+	    window.onload = setup;
+	  }
+	}  */
+
+	function key_up_limit(obj) {
+		document.getElementById("input_aspect_radio").checked = false
+		
+		document.getElementById("NewAspect_sentiment_scale").style.display = "block"
+		
+		var words = obj.value.match(/\S+/g).length;
+
+		if (words > 3) {
+			// Split the string on first 200 words and rejoin on spaces
+			var trimmed = obj.value.split(/\s+/, 3).join(" ");
+			// Add a space at the end to make sure more typing creates new words
+			obj.value = trimmed + " ";
+		}
+		/*else {
+		  $('#display_count').text(words);
+		  $('#word_left').text(200-words);
+		}*/
+
+	}
+
+	function input_aspect_radio_click(obj) {
+		aspect_text_control = document.getElementById("input_aspect_text")
+		aspect_text_control.value = ""
+		document.getElementById("NewAspect_sentiment_scale").style.display = "none"
+	}
+	
+	
+	function isBlank(str) {
+	    return (!str || /^\s*$/.test(str));
+	}
+	
+	
+	function check_form_validity()
+	{
+		// validate question 1
+		var cbs = document.getElementsByName("Q1Answer");
+		var any_aspect_selected = false;
+		for (var i = 0; i < cbs.length; i++) 
+		{
+			if(cbs[i].checked) any_aspect_selected = true;
+			if (cbs[i].value != 'None')
+			{
+				if(cbs[i].checked)
+				{
+					//alert(cbs[i].value)
+					var radios = document.getElementsByName(cbs[i].value);
+					var aspect_rating = -1;
+					//alert(radios)
+					var length = radios.length;
+					//alert(length)
+					
+					for (var j = 0; j < length; j++) 
+					{
+						//alert(radios[j].value)
+						//alert(radios[j].checked)
+						if (radios[j].checked) {
+							//alert(radios[i].value)
+							aspect_rating = radios[j].value;
+							break;
+						}
+					}
+					if (aspect_rating == -1) // no rating provided
+					{
+						alert("Question 1: You need to provide rating for the aspect of "
+								+ cbs[i].value);
+						return false;
+					}
+				}
+			}
+		}
+		if (!any_aspect_selected) {
+			alert('Question 1: You need to choose some aspects, or choose "None"');
+			return false;
+		}
+
+		if (document.getElementById("input_aspect_radio").checked == false) {
+			var aspect_text = document.getElementById("input_aspect_text").value;
+
+			if (isBlank(aspect_text)) {
+				alert('Question 2: You need to either choose "None" or describe the new aspect');
+				return false;
+			} else {
+				var radios = document.getElementsByName("NewAspect");
+				var aspect_rating = -1;
+				for (var i = 0, length = radios.length; i < length; i++) {
+					if (radios[i].checked) {
+						aspect_rating = radios[i].value;
+						break;
+					}
+
+				}
+				if (aspect_rating == -1) // no rating provided
+				{
+					alert("Question 2: You need to provide rating for the new aspect you identified");
+					return false;
+				}
+			}
+		}
+
+	}
+
+	function setup() {
+		if (document.getElementById("mturk_form")) {
+			document.getElementById("mturk_form").onsubmit = function() {
+				return check_form_validity();
+			};
+		}
+	}
+
+	window.onload = function() {
+		//alert('test')
+		setup();
+	};
+</script><p class="text-center"><input type="submit" id="submitButton" class="btn btn-primary" value="Submit" /></p></form><script language="Javascript">turkSetAssignmentID();</script></body></html>
