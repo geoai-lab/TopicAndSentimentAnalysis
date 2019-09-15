@@ -1,4 +1,4 @@
-# Analyzing Neighborhood Reviews
+# Semantic and Sentiment Analysis on Neighborhood Reviews
 
 * Author: Yingjie Hu
 * Email: yjhu.geo@gmail.com
